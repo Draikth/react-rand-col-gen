@@ -1,23 +1,26 @@
-import './App.css';
-import logo from './logo.svg';
+import randomColor from 'randomcolor';
 
 export default function App() {
+  const color = randomColor();
+  console.log(color);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <h1>Random Color Generator</h1>
+        <button>Generate</button>
+      </div>
+      <div
+        style={{
+          backgroundColor: color,
+          width: '50%',
+          margin: '25%',
+          color: 'white',
+          textShadow:
+            '-0.75px 0 black, 0 0.75px black, 0.75px 0 black, 0 -0.75px black',
+        }}
+      >
+        Generated Color: {color}
+      </div>
+    </>
   );
 }
