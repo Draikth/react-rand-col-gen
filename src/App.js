@@ -15,7 +15,7 @@ export default function App() {
       }}
     >
       <h1>Random Color Generator</h1>
-      <button onClick={() => setCol(!col)}>Generate</button>
+      <button onClick={() => setCol(col === !true)}>Generate</button>
       <div
         style={{
           fontWeight: 'bold',
