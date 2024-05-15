@@ -1,9 +1,10 @@
 import randomColor from 'randomcolor';
 import { useState } from 'react';
 
+// Export App to index.js
 export default function App() {
-  const [col, setCol] = useState(true);
-  const color = randomColor();
+  const [col, setCol] = useState(true); // Initialize useState as true
+  const color = randomColor(); // Generate random colors with randomcolor lib
   console.log(color);
   return (
     <div
