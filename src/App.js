@@ -14,14 +14,20 @@ export default function App() {
         alignItems: 'center',
       }}
     >
-      <h1>Random Color Generator</h1>
+      <h1
+        style={{
+          fontSize: '80px',
+        }}
+      >
+        Random Color Generator
+      </h1>
       <button onClick={() => setCol(col === !true)}>Generate</button>
       <div
         style={{
           fontWeight: 'bold',
-          fontSize: '100px',
+          fontSize: '75px',
           marginTop: '8px',
-          width: '700px',
+          width: '600px',
           display: 'flex',
           flexDirection: 'column',
           backgroundColor: color,
