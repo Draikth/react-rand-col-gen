@@ -17,12 +17,20 @@ export default function App() {
     >
       <h1
         style={{
-          fontSize: '80px',
+          fontSize: '90px',
         }}
       >
         Random Color Generator
       </h1>
-      <button onClick={() => setCol(col === !true)}>Generate</button>
+      <button
+        onClick={() => setCol(col === !true)}
+        style={{
+          fontSize: '40px',
+          marginBottom: '10px',
+        }}
+      >
+        Generate
+      </button>
       <div
         style={{
           fontWeight: 'bold',
